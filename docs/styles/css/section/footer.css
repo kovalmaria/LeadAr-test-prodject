@@ -41,4 +41,8 @@
     flex-direction: row;
     gap: 123px;
   }
+
+  .footer__link:hover {
+    scale: 1.1;
+  }
 }
