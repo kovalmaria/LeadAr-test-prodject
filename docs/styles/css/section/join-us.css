@@ -18,14 +18,13 @@
 }
 
 .join-us__slide {
-  width: 280px;
+  width: 100%;
   flex-shrink: 0;
   transition: transform 0.5s ease-in-out;
   background: #FFF;
   border-radius: 20px;
   padding: 25px;
   box-sizing: border-box;
-  box-shadow: 0px 10px 30px 0px #0000000D;
 }
 
 .join-us__icon-title-container {
@@ -89,6 +88,7 @@
 
   .join-us__slide {
     width: 100%;
+    box-shadow: 0px 10px 30px 0px #0000000D;
   }
 
   .join-us__mobile-image-container {
