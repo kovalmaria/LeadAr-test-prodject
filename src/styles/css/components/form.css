@@ -1,0 +1,275 @@
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 483px;
+  border-radius: 17px;
+  box-shadow: 0px 10px 40px 0px #0000001A;
+  background-color: #FFF;
+  margin-inline: auto;
+  box-sizing: border-box;
+}
+
+.form--highlight {
+  border: 1px solid #574DCC;
+}
+
+.form {
+  display: none;
+}
+.form.active {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin: 30px 36px 42px;
+}
+
+.form__group {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.form__label {
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.form__radio-group {
+  display: flex;
+  justify-content: space-between;
+  gap: 1px;
+}
+
+.form__radio-option {
+  flex: 1;
+  text-align: center;
+  background-color: #F5F7F9;
+  color: #8789A1;
+  padding: 10px 0;
+  font-weight: 400;
+  font-size: 12px;
+  cursor: pointer;
+  box-shadow: 0px 0px 5.8px 0px #00000005 inset;
+  transition: background-color 0.2s ease;
+}
+
+.form__radio-option--left {
+  border-top-left-radius: 5.8px;
+  border-bottom-left-radius: 5.8px;
+}
+
+.form__radio-option--right{
+  border-top-right-radius: 5.8px;
+  border-bottom-right-radius: 5.8px;
+}
+
+.form__radio-option input {
+  display: none;
+}
+
+.form__radio-option:hover {
+  background-color: #579AFF;
+}
+
+.form__radio-option.active {
+  background-color: #579AFF;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  padding: 12px;
+  color:#8789A1;
+  background-color: #F5F7F9;
+  border: none;
+  box-shadow: 0px 0px 5.8px 0px #261F7B0D inset;
+  border-radius: 5.8px;
+  font-size: 12px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.form__checkbox-label {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  font-size: 10px;
+  color: #8789A1;
+}
+
+.form__input-wrapper {
+  position: relative;
+}
+
+.form__toggle-password {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  padding: 0;
+  width: 20px;
+  height: 14px;
+}
+
+.form__toggle-password img {
+  width: 100%;
+  height: 100%;
+}
+
+.form__submit-btn {
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  background: linear-gradient(90deg, #574DCC 0%, #579AFF 100%);
+  box-shadow: 0px 11.59px 17.39px 0px #5851CF33;
+  color: #FFF;
+  padding: 12px;
+  border: none;
+  border-radius: 5.8px;
+  font-weight: 700;
+  font-size: 14px;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+
+.form__submit-btn:hover {
+  opacity: 0.9;
+}
+
+.form__google-btn {
+  font-family: 'Trebuchet MS', Arial, sans-serif;
+  background: #1A73E8;
+  box-shadow: 0px 0px 10px 0px #261F7B0D inset;
+  color: #FFF;
+  position: relative;
+  padding: 12px;
+  border: none;
+  border-radius: 5.8px;
+  font-weight: 400;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.form__icon-wrapper {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 34px;
+  width: 34px;
+  background: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3px;
+  border-radius: 7px;
+}
+
+.form__icon-wrapper img {
+  width: 20px;
+  height: 20px;
+}
+
+.form__tab-buttons {
+  margin-bottom: 30px;
+  height: 3px;
+  display: flex;
+  flex-direction: row;
+  gap: 6px;
+}
+
+.form__tab-button {
+  width: 18px;
+  height: 3px;
+  background-color: #5893FA33;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.form__tab-button.active {
+  background-color: #5893FA;
+}
+
+.form__terms {
+  font-family: Cera Pro;
+  font-weight: 400;
+  font-size: 10px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #595B75;
+}
+
+.form__separator {
+  margin-inline: auto;
+  color: #8789A1;
+  font-weight: 400;
+}
+
+@media (min-width: 769px) {
+  .form-wrapper {
+    min-width: 483px;
+    border-radius: 30px;
+  }
+
+  .form.active {
+    gap: 27px;
+    margin: 50px 56px 49px;
+  }
+
+  .form__group {
+    gap: 12pxpx;
+  }
+
+  .form__label {
+    font-size: 18px;
+  }
+
+  .form__radio-option {
+    font-size: 18px;
+    padding: 20px 0;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"] {
+    padding: 20px;
+    font-size: 18px;
+  }
+
+  .form__checkbox-label {
+    gap: 14px;
+    font-size: 14px;
+  }
+
+  .form__submit-btn {
+    font-size: 18px;
+    padding: 18px;
+  }
+
+  .form__google-btn {
+    font-size: 18px;
+    padding: 18px;
+  }
+
+  .form__icon-wrapper {
+    height: 51px;
+    width: 50px;
+  }
+
+  .from__icon-wrapper img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .form__tab-button {
+    width: 30px;
+    height: 5px;
+  }
+
+  .form__terms {
+    font-size: 14px;
+  }
+}

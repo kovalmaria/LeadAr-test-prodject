@@ -1,0 +1,27 @@
+.section-universe {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  width: 100%;
+}
+
+.universe__header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: start;
+}
+
+@media (min-width: 769px) {
+  .universe__header {
+    text-align: center;
+  }
+
+  .section-universe {
+    gap: 60px;
+  }
+}
